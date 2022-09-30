@@ -1,17 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.csc325_oop_designreview_lab;
 
-/**
- *
- * @author bijoy
- */
-public abstract class Freshman extends Student{
-    
-    public Freshman(double gpa, String name, short age) {
-        super(gpa, name, age);
+public class Freshman extends Student {
+
+    public Freshman(String name, short age, double credits, Address address, double gpa) {
+        super(name, age, credits, address, gpa);
     }
+
+    @Override
+    public String toString() {
+        return  super.toString();
+    }
+
     
+
+    
+
 }

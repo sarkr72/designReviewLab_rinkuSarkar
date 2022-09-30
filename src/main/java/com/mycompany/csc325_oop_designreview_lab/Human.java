@@ -35,4 +35,10 @@ public abstract class Human {
 	public void setAge(short age) {
 		this.age = age;
 	}
+
+    @Override
+    public String toString() {
+        return  "name =" + name + "\n" + " age =" + age;
+    }
+        
 }

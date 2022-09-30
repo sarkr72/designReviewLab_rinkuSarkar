@@ -4,10 +4,24 @@
  */
 package com.mycompany.csc325_oop_designreview_lab;
 
-/**
- *
- * @author bijoy
- */
-public class Senior {
+public class Senior extends Student{
+    
+    private double credits = 86.0;
+
+    public Senior(String name, short age, double credits, Address address, double gpa) {
+        super(name, age, credits, address, gpa);
+        credits = this.credits;
+    }
+
+    @Override
+    public String toString() {
+        return  (super.toString() +"\n"+ "credits=" + credits) + '}';
+    }
+    
+    
+
+   
+    
+    
     
 }
