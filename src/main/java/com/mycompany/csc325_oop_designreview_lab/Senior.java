@@ -8,8 +8,8 @@ public class Senior extends Student{
     
     private double credits = 86.0;
 
-    public Senior(String name, short age, double credits, Address address, double gpa) {
-        super(name, age, credits, address, gpa);
+    public Senior(String name, short age, double credits,  double gpa) {
+        super(name, age, credits, gpa);
         credits = this.credits;
     }
 
