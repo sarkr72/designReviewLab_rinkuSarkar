@@ -10,13 +10,12 @@ public class Student extends Human{
 	
 	// done 4: Add comments to your code
     private double credits;
-    private Address address;
+//    private Address address;
     private double gpa;
     
-    public Student( String name, short age, double credits, Address address, double gpa) { // Made student constructor
+    public Student( String name, short age, double credits, double gpa) { // Made student constructor
         super(name, age);
         this.credits = credits;
-        this.address = address;
         this.gpa = gpa;
     }
 
@@ -39,7 +38,7 @@ public class Student extends Human{
 
     @Override
     public String getAddress() {
-        return address+"";
+        return address;
     }
 
     @Override
@@ -49,7 +48,7 @@ public class Student extends Human{
 
     @Override
     public String toString() {
-        return  super.toString()+"\n"+ "credits=" + credits + "\n" +" address=" + address + "\n" + " gpa=" + gpa ;
+        return  super.toString()+"\n"+ "credits=" + credits + "\n" + " gpa=" + gpa ;
     }
     
     
